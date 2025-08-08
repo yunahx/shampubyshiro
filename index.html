@@ -1,1 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - shampu</title>
+  
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link href="//solrainha.github.io/saturnicons/saturnicons.css" rel="stylesheet">
+<link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee:400,400italic|Lato:400,400italic,700,700italic" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<link href="//fonts.googleapis.com/css?family=Public+Sans|Karla" rel="stylesheet">
+<link href="//glenthemes.github.io/-music-/glenplayer03.css" rel="stylesheet">
+<script src="//glenthemes.github.io/-music-/glenplayer03.js"></script>
+<style element="glenplayer03">
+:root {
+    --MusicBox-Left-Or-Right:left;
+    --MusicBox-Edge-Distance:30px;
+    
+    --MusicBox-Width:210px;
+    
+    --MusicBox-Title-Padding:15px;
+    --MusicBox-Title-Background:#cecece;
+    --MusicBox-Title-Size:10px;
+    --MusicBox-Title-Color:#414141;
+    --MusicBox-Title-Corner-Roundness:8px;
+    
+    --MusicBox-Main-Background:#fff;
+    --MusicBox-Main-Padding:14px;
+    --MusicBox-Side-Borders:#eee;
+    
+    --Album-Art-Size:32px;
+    --Album-Art-Corner-Roundness:3px;
+    --Album-Art-Gap:10px;
+    
+    --Song-Name-Size:9px;
+    --Song-Name-Color:#999;
+    
+    --Artist-Name-Size:10px;
+    --Artist-Name-Color:#414141;
+    
+    --Music-Buttons-Size:11px;
+    --Music-Buttons-Color:#414141;
+    
+    --Track-Spacing:9px;
+    
+    --Autoplay-First-Song:no;
+    --Autoplay-Next-Song:yes;
+    --Loop-Playlist-Infinitely:no;
+}
+</style>
+
+<div glenplayer03>
+    <div musicbox-title>my music ♪</div>
+    <img album-art src="https://http2.mlstatic.com/D_NQ_NP_781045-MLA54308328591_032023-O.webp"><div song-name>Sometimes</div>
+    <div artist-name>Ariana Grande</div>
+    <audio src="assets/Sometimes.mp3"></audio>
+    <img album-art src="https://xatimg.com/image/nAS3rTdbe4hF.jpg"><div song-name>I'm gonna miss you</div>
+    <div artist-name>Milli Vainilli</div>
+    <audio src="assets/MilliVanilli.mp3" volume="99%"></audio>
+    <img album-art src="https://xatimg.com/image/GB7dZCKuNnj2.png"><div song-name>kiss it better</div>
+    <div artist-name>Rihanna</div>
+    <audio src="assets/KissItBetter.mp3" volume="70%"></audio>
+    <img album-art src="https://xatimg.com/image/SVGMKQfJ6Ovh.png"><div song-name>hotter than hell</div>
+    <div artist-name>dua lipa</div>
+    <audio src="assets/HotterThanH.mp3" volume="75%"></audio>
+    <img album-art src="https://upload.wikimedia.org/wikipedia/en/6/6d/Sam_Smith_-_How_Do_You_Sleep%3F.png"><div song-name>how do you sleep</div>
+    <div artist-name>sam smith</div>
+<audio src="assets/HDYS.mp3"></audio>
+</div>
+                    
+<style type="text/css">
+
+#s-m-t-tooltip { max-width:300px; border-radius: 4px; padding:5px 10px; margin:25px 20px 5px 0px; color:#1077b2; background: #fdfdfd;  z-index:99999; font-size:7px; text-transform:uppercase; font-family:robold; letter-spacing:2px; font-weight:bold; z-index:999999999999999; }
+
+::-webkit-scrollbar { width: 1px; height:3px; background: transparent;}
+::-webkit-scrollbar-thumb { background-color: transparent; -webkit-border-radius: 1ex; }
+
+.clearfix {margin-top: -155px;}
+br {line-height:0px;}
+td td td br {line-height:auto;}
+table, tr, td {background-color:transparent !important;}
+table table {visibility:hidden;}
+table table table, table.blurbs td.text, span.orangetext15, #footerWarpper {display:none;}
+div table, table.blurbs, table.blurbs table {visibility:visible; display:table; _display:inline;}
+div div table div, div.clearfix a, input {display:none;}
+div.clearfix table div div, #footerWarpper {display:block;}
+
+                                    /* ---- text styles & fonts. ----*/
+
+
+
+@font-face{ font-family:"roboto"; src: url('https://dl.dropboxusercontent.com/s/i5x37kqbtb40s0b/Roboto-Light.ttf’)'); }
+
+@font-face{ font-family:"robold"; src: url('https://dl.dropboxusercontent.com/s/qynix3bz0j8ppva/Roboto-BoldCondensed.ttf’)'); }
+
+@font-face{ font-family:"shutter"; src: url('https://dl.dropboxusercontent.com/s/l52ysbcirhvz2c4/shutter.ttf’)'); }
+
+@font-face{ font-family:"coco"; src: url('https://dl.dropboxusercontent.com/s/8wrlemolu4y15y8/coco.ttf’)'); }
+
+@font-face{ font-family:"eloquent"; src: url('https://dl.dropboxusercontent.com/s/ehd51y97bzoryxi/EloquentJFRegularPro.ttf’)'); }
+
+
+
+a:link, a:active, a:visited { color: #282828; text-decoration:none; }
+ 
+a:hover { color:#1077b2; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear; }
+
+small, sub, sup { font-size:9px; }
+
+big { font-size:auto; }
+
+b, strong { color:#1077b2; font-weight: 600; letter-spacing: 0.5px; }
+
+i, em { color:#1d1d1d; }
+
+.sf-heart { color: #1077b2; font-size: 10px;}
+
+h1 { background: #fdfdfd; font-family: 'robold'; color: #414141; padding: 5px 10px; border-radius:2px; font-size: 7px; letter-spacing:1px; font-weight:normal; border:1px solid #cecece;  color:; margin: -21px -16px 10px -16px; text-transform: uppercase; }
+
+h3 { background-color:#fdfdfd; border-radius:8px; font-size:18px; text-align:center; letter-spacing:2px; font-family:'roboto'; color:#1077b2; text-align:center; font-size:15px; line-height:24px;  padding:5px; }
+
+h2 { text-transform:uppercase; text-align:right; letter-spacing: 3px; font-size:9px; color:#1d1d1d; }
+
+p { margin-top:6px; margin-bottom:6px; }
+
+blockquote { padding:0px; padding-left:10px; margin:8px; border-left:1px solid #cecece; }
+ 
+img { border:none; max-width:100%; height:auto; filter: grayscale(100%); opacity: 0.8; }
+
+ 
+                                          /* ---- body & container ---- */
+
+body {color:#414141; background-color:#dadada;  font-family: arial; font-size:8px; letter-spacing:1px; line-height:17px; text-align:justify; background-image:url('https://assets.tumblr.com/images/x.gif?v=1'); }
+
+#holder { position:absolute; width:800px; height:470px; margin: auto; left:0; top:0; bottom:0; right:0; background-color:#ededed; border:1px solid #cecece; font-family: arial; }
+
+
+                                              /* ----  sidebar.  ----  */
+
+#topbar { position:absolute; left:0px; top:0px; height:55px; width:471px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;}   
+
+.sfm input { position:absolute; left:15px; top:18px; width:155px; background-color:#ededed; font-size: 8px; text-transform:lowercase;  letter-spacing:2px; font-style:italic; padding: 4px 8px; border:1px solid #cecece; border-radius:3px; }
+
+#line { position:absolute; left: 25px; top: 27px; width:270px; height:1px; background-color:#cecece; }
+                                          
+#sidebar { position:absolute; left:0px; top:55px; height:360px; width:200px; border-right:1px solid #cecece; z-index: 9999; }
+
+#title { position:absolute; left:0px; top:1px; width:200px; height:80px;  border-bottom:1px solid #cecece; }
+
+.title { position:absolute; left:20px; bottom: 4px; width:160px; height:50px; text-align:right; font-family: coco; font-size:20px; color:#414141; letter-spacing:-1px; line-height:20px; }
+
+.title tt { letter-spacing:2px; font-family: shutter; font-size:53px; }
+
+
+#dots { position:absolute; width:140px; height:120px; left:10px; top:-15px; overflow:hidden; }
+ 
+#dots li {  width:12px; height:12px; padding:5px; list-style:none;  text-align:center; line-height:5px; margin-right:11px; margin-bottom:11px; float:left; font-size:12px; opacity:.5; }
+ 
+
+
+#graphic { position:absolute; left:0px; bottom:110px; width:200px; height:168px; border-top:1px solid #cecece; }
+
+
+#profile { position:absolute; left:-1px; bottom:0px; width: 200px; height:130px;  background-color:#ededed; border:1px solid #cecece; border-radius:30px; border-bottom-left-radius:0px; border-bottom-right-radius:0px; }
+
+.icon { position:absolute; left:20px; top:20px; width:40px; height:40px; padding:3px; border:1px solid #cecece; border-radius:100px; overflow:hidden;}
+
+.icon img { width:40px; height:40px; border-radius:100px; }
+
+.at { position:absolute; left:77px; top:38px; width:160px; height:50px; font-family:coco; font-size:11px; color:#414141; letter-spacing:0px; line-height:13px; }
+
+.at tt { letter-spacing:2px; font-family:shutter; font-size:24px; }
+
+.subtit { position:absolute; left:77px; top:50px; width:160px; height:50px; font-family:robold; font-size:7px; text-transform:uppercase; color:#414141; letter-spacing:1px; line-height:13px; }
+
+.desc { position:absolute; left:15px; bottom:10px; width:170px; height:40px; font-style:italic; font-size:7px; color:#414141; letter-spacing:2px; text-align:center; line-height:13px; }
+
+#feed { position:absolute; left:201px; top:56px; height:358px; width:270px; background-color:#e7e7e7; border-right:1px solid #cecece; overflow:auto; overflow-x:hidden; z-index: 9999; border-bottom :1px solid #cecece; }
+
+#instapost { position:relative; margin:30px 30px; width:170px; height:295px; background-color:#ededed; padding-top:10px; margin-bottom:20px; border-radius:10px; padding:20px; font-weight:bold; border:1px solid #cecece; }
+ 
+#instapost2 { position:relative; margin:30px 30px; width:170px; height:295px; background-color:#ededed; padding-top:10px; margin-bottom:30px; border-radius:10px; padding:20px; font-weight:bold; border:1px solid #cecece; }
+ 
+#insta2icon { position: absolute; width:25px; height:25px; left:10px; top:10px;  border-radius:100px; overflow:hidden; }
+ 
+#insta2icon img { width:25px; }
+ 
+#insta2name { position:absolute;  left:20px; top:13px; font-family:'roboto'; font-size:12px; font-weight:bold; padding:0px 23px; line-height:10px; color:#414141; letter-spacing:1px; }
+ 
+#insta2place { position:absolute;  left:21px; top:25px; font-family:'robold'; font-size:7px; text-transform:uppercase; font-weight:bold;  overflow:hidden; padding:0px 23px; line-height:10px; letter-spacing:.5px; }
+ 
+#insta2place i { font-size:5px; }
+ 
+#insta2dots { position:absolute;  right:-12px; top:20px; font-family:'robold'; font-size:10px; text-transform:uppercase; font-weight:bold;  overflow:hidden; padding:0px 23px; line-height:10px;  letter-spacing:1.5px; }
+ 
+#insta2img { position: absolute; width:210px; height:210px; left:0px; top:45px; background-color:#ededed;  }
+ 
+#iconrow2 { position:absolute;  left:10px; bottom:60px; width: 250px; height:20px; overflow:hidden; font-weight:bold; letter-spacing:3px; line-height:30px;  }
+ 
+#iconrow2 i { font-size: 11px; color:#414141;}
+ 
+#bookmark { position:absolute;  left:185px; bottom:53px; width: 250px; height:20px; overflow:hidden; font-size:11px; letter-spacing:3px; line-height:30px;  }
+ 
+#insta2cap { position:absolute; left:0px; bottom:28px; font-size:7px; font-weight: light!important; font-family: arial; overflow:hidden; line-height:12px; padding:0px 10px; color: #888;}
+ 
+#insta2cap b {  font-family:robold; font-size:8px;  text-transform:uppercase; color:#414141; letter-spacing:1px; margin-right: 4px; }
+ 
+#insta2comm { position:absolute; left:0px; bottom:10px; font-family:'robold'; font-size:7px; font-weight: light; text-transform:uppercase; overflow:hidden; line-height:12px;  letter-spacing:1px; padding:0px 10px;}
+
+
+#bottombar { position:absolute; left:0px; bottom:0px; height:55px; width:471px; background-color:#ededed; border-right:1px solid #cecece; border-top:1px solid #cecece;}  
+
+#line2 { position:absolute; left:35px; top: 27px; width:400px; height:1px; background-color:#cecece; }
+
+.subtitle { position:absolute; left:80px; bottom:5px; width:301px; height:35px; background-color:#ededed; padding:5px; text-align:center; font-family:robold; font-size:7px;  text-transform:uppercase; color:#414141; letter-spacing:3px; line-height:35px; overflow:hidden; }
+
+
+
+#linkage { position: absolute; right:0px; bottom:0px; width:155px; height:38px; padding-left:15px; background-color:#ededed; text-align:right; font-size:25px; word-spacing:8px; line-height:5px; z-index: 9999; }
+ 
+#linkage li {  width:12px; height:12px; padding:5px; list-style:none; text-align:center; background-color:; border-radius:7px; margin-right:6px; float:left;  }
+
+#linkage li:hover { color: #1077b2; }
+ 
+#linkage a:link, #linkage a:active, #linkage a:visited  { font-weight:bold; text-transform:uppercase; font-family: 'robold', sans-serif;  font-size:12px; background-color:; font-weight:bold; letter-spacing:3px; color: #414141;  -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; transition: all 0.5s linear;  }
+
+#linkage a:hover { color: #1077b2!important; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear; }
+
+ 
+ 
+
+
+
+                                             /* ----  first tab.  ----  */
+
+#stats { position:absolute; right:0px; bottom:50px; height:370px; width:210px; background-color:#e7e7e7; border:1px solid #cecece; border-right:none; }
+
+.stats { position:absolute; left:20px; bottom:20px; width:175px; height:250px; font-style:italic; font-size: 8px; color:#414141; letter-spacing:1px; line-height:13px; overflow:auto; text-transform: lowercase; }
+
+.tabtit { position:absolute; right:15px; top:30px; width:130px; height:50px; text-align:right; font-family:shutter; font-size:55px; color:#1077b2; letter-spacing:1px; line-height:25px;  transform: rotate(-2deg);}
+
+#navi { position: absolute; left: -130px; bottom: 0px; width:120px; height:320px;  font-size:25px; line-height:5px; padding-top:10px; overflow:hidden; z-index: 9999;}
+ 
+#navi li {  width:120px; height:30px; list-style:none;  margin-bottom:25px; float:right;  line-height:18px; font-family: 'robold'; font-size:8px; letter-spacing:2px; font-weight:bold; text-transform:uppercase; color:#414141; text-align:right; }
+ 
+#navi b { color:#414141; font-family:'coco'; font-size:12px; text-transform:lowercase; letter-spacing:0px; }
+ 
+#navi a:link, #navi a:active, #navi a:visited { color:#414141; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear; font-family: 'robold'; font-size: 8px; }
+ 
+#navi a:hover { color:#1077b2; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear; }
+                                         
+
+
+
+
+/* Pop Up */
+
+
+.overlay {
+position:absolute; width:800px; height:470px; margin: auto; left:0; top:0; bottom:0; right:0; background-color: ; 
+ 
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 1; 
+z-index: 99;
+overflow: hidden;
+
+    transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+    transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+}
+
+
+.popup { position: absolute; right: 0px; bottom: 50px; height:370px; width:210px; background-color:#e7e7e7; border:1px solid #cecece; border-right:none; }
+
+.popup .content { position:absolute; left:20px; bottom:20px; width:175px; height:250px; font-style:italic; font-size: 8px; color:#414141; letter-spacing:1px; line-height:13px; overflow:auto; text-transform: lowercase;}
+
+.popup .close {
+  position: absolute;
+margin-top: -40px;
+margin-left: 138px;
+text-transform: uppercase;
+  top: 10px;
+  right: 16px;
+  transition: all 200ms;
+  font-size: 12px; letter-spacing: 4px;
+font-family: ;
+  font-weight: ;
+text-align: center;
+  text-decoration: none;
+  color: #000;
+border: 0px solid #000;
+}
+
+.popup .close:hover {
+  color: #1077b2;
+}
+
+
+/* END POP UP */
+
+
+
+                                             
+ 
+                             /* ---- do not remove or edit credit. ---- */
+
+#credit { position:fixed; bottom:10px; right:10px; font-size:7px; width:75px; height:7px; line-height:9px; text-align:center; font-family:robold; color:#414141; text-transform:uppercase; letter-spacing: 0px; font-style:normal; background:#1077b2; border-radius:5px; padding:5px 6px 7px 7px;}
+    #credit a { color:#fff; letter-spacing: 1px; font-size:7px; line-height:9px; text-align:center; font-family:robold; color:#fff; text-transform:uppercase; font-style:normal; }
+    #credit i { color:#414141; font-size:14px; }
+  
+
+
+
+</style>
+
+      
+
+<body><div id="holder"><div id="topbar"> 
+
+<div id="line"> </div>
+<div id="linkage">
+<li><a href="/home.php" title="home"> <span class="icon-home"></span> </a></li>
+<li><a href="/send_message.php?member_id=1707190" title="message."> <span class="icon-pencil"></span></a></li>
+<li><a href="/add_comment.php?member_id=1707190" title="comment."> <span class="icon-bubbles"></span> </a></li>
+<li><a href="/gallery.php?member_id=1707190" title="gallery."> <span class="icon-picture"></span> </a></li>
+<li><a href="/1706549" title="idol complex."> <span class="icon-star"></span></a></li></div>
+</div>
+
+<div id="sidebar"><div id="title"> 
+        <div class="title"> <tt>Shampu</tt> <br>coquette;        </div></div>
+<div id="graphic"> <img src="https://i.ibb.co/1Rnn3CX/IMG-20231103-WA0031.jpg"> </div><div id="profile"> 
+        <div class="icon"> <img src="https://i.ibb.co/yg3J2xG/IMG-20231103-WA0014.jpg"> </div><div class="at"><tt>@</tt>TuColaBaboso</div><div class="subtit">1531432932.</div><div class="desc">Decidí confiar en mí, en este momento no es el lugar donde quiero estar, pero es parte del proceso, para llegar.. </div></div></div><div id="feed"> 
+    
+    <div id="instapost"><div id ="insta2icon">  
+<img src="https://i.ibb.co/yg3J2xG/IMG-20231103-WA0014.jpg"> </div>
+
+<!-- INSTA USERNAME  -->
+<div id="insta2name">WhoIsMe?</div>
+<!--  INSTA LOCATION  --> 
+<div id="insta2place"> one shot dorm <i class="icon-arrow-right" style="color:#414141"></i></div>
+<div id="insta2dots"> •••</div>
+<div id="insta2img"> <img src="https://i.ibb.co/WtWjdDc/IMG-20231103-WA0053.jpg" /> </div>
+<div id="iconrow2"><span class="sf sf-heart"></span> <i class="icon-bubbles"></i> <i class="icon-paper-plane"></i></div>
+<div id="bookmark"><span class="lnr lnr-bookmark"></div>
+
+<!--  INSTA POST AND CAPTION  --> 
+<div id="insta2cap"> <b> Shampu</b> Too hot to wear too many clothes . </div><div id="insta2comm">view all 5,256 comments <i class="icon-arrow-right"></i></div></div><div id="instapost2"><div id ="insta2icon">  <img src=" https://i.ibb.co/yg3J2xG/IMG-20231103-WA0014.jpg "> </div>
+
+<!-- INSTA USERNAME  --><div id="insta2name">WhoIsMe?</div>
+
+<!--  INSTA LOCATION  --> <div id="insta2place"> one shot dorm <i class="icon-arrow-right" style="color:#414141"></i></div><div id="insta2dots"> •••</div><div id="insta2img"> <img src=" https://i.ibb.co/dGnFT2j/IMG-20231103-WA0058.jpg " /> </div><div id="iconrow2"><span class="sf sf-heart"></span> <i class="icon-bubbles"></i> <i class="icon-paper-plane"></i></div><div id="bookmark"><span class="lnr lnr-bookmark"></div>
+
+<!--  INSTA POST AND CAPTION  --> <div id="insta2cap"> <b> Shampu</b> My mom taught me to eat everything . </div><div id="insta2comm">view all 6,439 comments <i class="icon-arrow-right"></i></div></div></div><div id="bottombar"> 
+    <div id="line2"> </div><div class=" subtitle">Nunca nadie se arrepiente de ser valiente.</div></div>
+      <!--  navigation tab.  -->
+
+<div id="stats"> 
+
+<div id="navi"><li><a href="#popup1">first. <br> <b>musings.</b></a></li><li><a href="#popup2">second. <br> <b>biography.</b></a></li><li><a href="#popup3">third.<br> <b>connections.</b></a></li><li><a href="#popup4">fourth. <br> <b>checks.</b></a></li><li></div>   
+
+    
+        <div class="tabtit">itome modotsuke.</div>
+<!-- STATISTICS  -->
+<div class="stats">
+      <h2>basics</h2> 
+<b>Full name:</b> Lady.<br>
+<b>Nick Name :</b> Shampu.<br>
+<b>Age:</b> It's not important<br>
+<b> birth of place:</b>Guayaquil.<br>
+        <h2>in depth</h2> 
+<b>ethnicity:</b> Latín - half-breed<br> 
+<b>nationality:</b> Ecuadorean.<br>
+<b>star sign:</b> Sagittarius.<br>
+<b>current location:</b> Ecuador, Gye<br>
+<b>occupation:</b> university student/Call of duy Listen to music Entertainment.<br>
+<b>personality:</b>cold, calm, impatient, somewhat insensitive, graceful, egocentric
+        
+        <h2></h2>
+        </div></div>
+
+
+
+
+
+<div id="popup2" class="overlay">
+<div class="popup">
+<a class="close" href="#"><span class="lnr lnr-cross"></span></a>
+      <div class="tabtit">itome modotsuke.</div>
+<!-- BIOGRAPHY -->
+<div class="content">
+<h2>biography</h2> 
+Born on the winter solstice of  December, in the city of Guayaquil.  </p>
+<b>under construction!</b>
+</div>
+</div>
+
+
+<div id="popup3" class="overlay">
+<div class="popup">
+<a class="close" href="#"><span class="lnr lnr-cross"></span></a>
+      <div class="tabtit">itome modotsuke.</div>
+<!-- CONNECTIONS -->
+<div class="content">
+<h2>connections</h2> 
+<div><img style="float: left; height: 50px; opacity: 0.8; padding: 5px; border: 1px solid #cecece; margin-right: 10px;" src=" https://i.ibb.co/GR0WYnd/IMG-20231103-165424.jpg">
+<b>Uhmcita</b>
+  Te amo mensa, ñiñiñi <3.</div><br><br><br>
+<div><img style="float: left; height: 50px; opacity: 0.8; padding: 5px; border: 1px solid #cecece; margin-right: 10px;" src=" https://xatimg.com/image/Sg0Msa7puLMe.png">
+<b>Mel🌙</b>
+  Ñañita toda bonita, toda chiquita tqm uwu.</div><br><br>
+<div><img style="float: left; height: 50px; opacity: 0.8; padding: 5px; border: 1px solid #cecece; margin-right: 10px;" src=" https://xatimg.com/image/drtEZVX59OKm.png">
+<b>Cobain</b>
+  Twin sagitario, hondunegro te adoro a mil</div><br><br>
+<div><img style="float: left; height: 50px; opacity: 0.8; padding: 5px; border: 1px solid #cecece; margin-right: 10px;" src=" https://xatimg.com/image/41E6xOoV6Iey.png">
+<b>Andrés</b>
+  Bro, ¿qué ves aquí? Eso soy sin ti bro, loviu</div>
+</div>
+</div>
+
+
+<div id="popup4" class="overlay">
+<div class="popup">
+<a class="close" href="#"><span class="lnr lnr-cross"></span></a>
+      <div class="tabtit">itome modotsuke.</div>
+<!-- HEADCANONS -->
+<div class="content">
+<h2>Feminist checks</h2> 
+<b>oo1.</b> Si una morra te dice que no, es no puto degenerado de mierda.</p>
+<b>oo2.</b>Que lo único que te pegue, sea un porro y no un vato.</p>
+<b>oo3.</b> No tienes la obligación de cuidar la reputación de quién te violentó.</p>
+<b>oo4.</b> Tu forma de vestir no determina la cantidad de respeto que mereces.</p>
+
+</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
